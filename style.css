@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    /* width: 100%; */
+}
+#clr1, #clr2{
+    width: 50px;
+    height: 50px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    background: #8f8c8c;
+    width: 50%;
+    height: 25px;
+    border-radius: 50px;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background: #cb0000;
+    cursor: pointer;
+  }
+
