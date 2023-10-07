@@ -12,10 +12,10 @@ function safdar(){
     // ------ through slider change orientation ------ 
 
     var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value;
+    // var output = document.getElementById("demo");
+    // output.innerHTML = slider.value;
     slider.oninput = function() { 
-     output.innerHTML = this.value;
+    //  output.innerHTML = this.value;
     var a = this.value;
     document.body.style.background='linear-gradient(' + a + 'deg,' + colr1 + ',' + colr2 +')';
 }

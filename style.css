@@ -12,9 +12,9 @@ body{
 
 .slider{
     -webkit-appearance: none;
-    background: #8f8c8c;
+    background: #b7b5b5;
     width: 50%;
-    height: 25px;
+    height: 10px;
     border-radius: 50px;
 
 }
@@ -22,10 +22,19 @@ body{
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 15px;
     border-radius: 16px;
-    background: #cb0000;
+    background: #541111;
     cursor: pointer;
-  }
+}
 
+.slider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 15px;
+    border-radius: 16px;
+    background: #c25151;
+    cursor: pointer;
+}
