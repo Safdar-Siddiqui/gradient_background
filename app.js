@@ -6,19 +6,27 @@ function safdar(){
     let colr2 = document.getElementById("clr2").value;
     let head1= document.getElementById("abc");
     document.body.style.background='linear-gradient(90deg,' + colr1 + ',' + colr2 +')';
-
+    
 
 
     // ------ through slider change orientation ------ 
 
-    var slider = document.getElementById("myRange");
+    var mySlider = document.getElementById("myRange");
+    
     // var output = document.getElementById("demo");
     // output.innerHTML = slider.value;
-    slider.oninput = function() { 
+    mySlider.oninput = function() { 
     //  output.innerHTML = this.value;
     var a = this.value;
     document.body.style.background='linear-gradient(' + a + 'deg,' + colr1 + ',' + colr2 +')';
 }
+
+function onSliderChange() {
+    mySlider.title = "Orientation: " + this.value;
+  }
+  mySlider.addEventListener("change", onSliderChange);
+  onSliderChange();
+  mySlider.title = "Orientation: "+ mySlider.value;
    
 
 
